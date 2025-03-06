@@ -1,0 +1,45 @@
+.slick-header-columns {
+    background-color: #d1eaff !important; /* Change to your preferred color */
+    color: white !important; /* Text color */
+    
+}
+
+.slick-header-column {
+    background-color: #d1eaff !important;
+    line-height: "1.3rem"!important;
+    font-size: 12px !important;
+    color: white !important;
+    font-weight: bold;
+    border-right: 1px solid #ffffff;
+}
+
+.slick-column-name{
+    color: black !important;
+}
+.slick-widget-content{
+    background-color: #ffffff !important;
+}
+.slickgrid-container .slick-header{
+    box-shadow: "0px 3px 4px rgba(0, 0, 0, 0.16)"!important,
+    border-radius: "4px" !important,
+}
+.slickgrid-container .slick-header{
+    box-shadow: "0px 3px 4px rgba(0, 0, 0, 0.16)"!important,
+    border-radius: "4px" !important,
+}
+
+.slick-state-default,.slick-cell{
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(221, 221, 221) !important;
+}
+.slick-cell{
+    padding: 2px 7px !important;
+}
+*,
+body {
+  font-family: "Roboto", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(150, 202, 255, 1) rgba(255, 255, 255, 1)!important;
+  /* */
+}

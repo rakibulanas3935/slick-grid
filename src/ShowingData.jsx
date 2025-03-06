@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import { SlickgridReact, Aggregators, GroupTotalFormatters } from 'slickgrid-react';
-import { ExcelExportService } from '@slickgrid-universal/excel-export';
+import "./App.css"
 import * as XLSX from 'xlsx'; // Import SheetJS for Excel export
 
 const ShowingData = () => {
@@ -36,7 +37,7 @@ const ShowingData = () => {
     const gridOptions = {
         enableAutoResize: false,
         gridHeight: 400,
-        gridWidth: 800,
+        gridWidth: "100%",
         enableGrouping: true,
     };
 
@@ -246,7 +247,7 @@ const ShowingData = () => {
     };
 
     return (
-        <>
+        <div>
             <div style={{ marginBottom: '10px', marginTop: "30px" }}>
 
                 <input
@@ -335,13 +336,13 @@ const ShowingData = () => {
             </div>
 
             <SlickgridReact
-                gridId="grid2"
+                gridId="grid1"
                 columnDefinitions={columnDefinitions}
                 gridOptions={gridOptions}
                 dataset={data}
                 onReactGridCreated={(event) => setGridObj(event.detail)}
             />
-        </>
+        </div>
     );
 };
 
